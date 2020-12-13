@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="main_div">
+        <h1>chat with jarvis..</h1>
+        <hr>
+        <div class="msg_box">
+            <div class="cheat_area">
+                <!-- <div class="message left">what is your name?</div> -->
+                 <!-- <div class="message right">my name is robot</div> -->
+            </div>
+        </div>
+    </div>
+    <span class="user_input" id="mic"><i class="fa fa-microphone" aria-hidden="true"></i></span>
+    <img src="images/robot.gif" alt="user" class="robo_img">
+    <script src="vanilla-tilt.js"></script>
+    <script src="script.js"></script>
+        <script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".user_input"), {
+		max: 25,
+		speed: 400,
+        glare: true
+	});
+	
+	//It also supports NodeList
+	VanillaTilt.init(document.querySelectorAll(".your-element"));
+</script>
+</body>
+</html>
